@@ -4,5 +4,5 @@
     "Publish"
   ],
   "IntegrationFileName": "TemplateIntegration",
-  "DependenciesFileName": "deps"
+  "DependenciesFileName": ""
 }

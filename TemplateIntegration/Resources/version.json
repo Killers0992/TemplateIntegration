@@ -1,0 +1,8 @@
+{
+  "Version": "1.0.0",
+  "Changelog": [
+    "Publish"
+  ],
+  "IntegrationFileName": "TemplateIntegration",
+  "DependenciesFileName": "deps"
+}

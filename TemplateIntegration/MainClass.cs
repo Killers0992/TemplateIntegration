@@ -1,4 +1,9 @@
-﻿namespace TemplateIntegration
+﻿using CoreOSC;
+using Microsoft.Extensions.DependencyInjection;
+using System.Drawing;
+using TemplateIntegration.Services;
+
+namespace TemplateIntegration
 {
     public class MainClass : VrcIntegration<IntegrationConfig>
     {
@@ -8,6 +13,16 @@
         {
             Instance = this;
             MainPanel = new MainPanel();
+        }
+
+        public override void OnRegister(ref IServiceCollection services)
+        {
+            services.AddHostedService<TestService>();
+        }
+
+        public override void OnReceiveOscMessage(string address, OscMessage message)
+        {
+            Logger.Info($"OscIn", $"Received osc from address {address}", Color.Aqua, Color.White);
         }
 
         public override string Name { get; } = "TemplateIntegration";

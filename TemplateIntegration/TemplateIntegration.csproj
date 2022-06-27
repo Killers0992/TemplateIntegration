@@ -27,7 +27,7 @@
 
     <ItemGroup>
       <Reference Include="VrcOscIntegrations">
-        <HintPath>..\..\VrcOscIntegrations\VrcOscIntegrations\bin\Debug\net6.0-windows\VrcOscIntegrations.dll</HintPath>
+        <HintPath>..\..\VrcOscIntegrations\VrcOscIntegrations\bin\Debug\net6.0-windows10.0.17763.0\VrcOscIntegrations.dll</HintPath>
       </Reference>
     </ItemGroup>
 
